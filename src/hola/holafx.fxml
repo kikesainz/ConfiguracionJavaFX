@@ -8,6 +8,6 @@
 			xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hola.Controller">
 
         <Label  id="label" text="Label" />
-        <Button id="aceptar" text="Aceptar"/>
+        <Button id="aceptar" text="Aceptar" onAction="#atiendeClickBoton"/>
 
 </VBox>
