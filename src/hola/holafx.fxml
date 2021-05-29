@@ -7,7 +7,7 @@
 <VBox prefHeight="400.0" prefWidth="600.0" 
 			xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hola.Controller">
 
-        <Label  id="label" text="Label" />
-        <Button id="aceptar" text="Aceptar" onAction="#atiendeClickBoton"/>
+        <Label  fx:id="label" text="Pulsa el botón" />
+        <Button fx:id="aceptar" text="Aceptar" onAction="#atiendeClickBoton"/>
 
 </VBox>
