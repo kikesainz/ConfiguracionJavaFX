@@ -5,15 +5,18 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("./holafx.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("./prueba.fxml"));
         primaryStage.setTitle("Hola Mundo");
-        primaryStage.setScene(new Scene(root, 400, 300));
+        primaryStage.sizeToScene() ;
+        primaryStage.getIcons().add(new Image(("file:resources/punk.png")));
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 
